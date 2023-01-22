@@ -65,6 +65,12 @@ int main()
             
         }
         cout<<endl;
-    }            
+    }   
+    //-------------------------------------------------------------------------------------------
+    
+    //if dis similar or not following pattern pattern is changing so divide and unite elements which are similar print them
+    // according to pattern.
+    
+    
     return 0;
 }
