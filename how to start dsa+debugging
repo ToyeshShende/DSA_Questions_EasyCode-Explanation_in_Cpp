@@ -15,15 +15,19 @@ how they are working then you will get a clear idea and logic and you will compl
 
 step 4:
 for Error debuging:
-if code passes all given cases but after when you submit it doesn't pass all test cases always check for corner cases like for 0 or 1 or total size
 
-if in constrains the maximum limit is give like 10^20(very big numbers) try code with long long data type initialization
+1)if code passes all given cases but after when you submit it doesn't pass all test cases always check for corner cases like for 0 or 1 or total size
 
-if code get tle error try to remove nested for loops and obtimize code avoid inizaling so many unneccesary variable ,vectors,set etc.
+2)if in constrains the maximum limit is give like 10^20(very big numbers) try code with long long data type initialization
 
-if code get segmentation fault means you might get forgot about return vector or int (write according to function)
+3)if code get tle error try to remove nested for loops and obtimize code avoid inizaling so many unneccesary variable ,vectors,set etc.
 
-if code get error for can't recognize vector,set,deque or any built function or stl  you might be forgot to add 
+4)if code get segmentation fault means you might get forgot about return vector or int (write according to function)
+
+5)if code get error for can't recognize vector,set,deque or any built function or stl  you might be forgot to add 
 #include <bits/stdc++.h>   as defaultly iostream lib is given.
+
+6)if code get stray//334  or any other stary error check the indentation of return .(should at tab space from where the function initialization started)
+
 
 
