@@ -48,6 +48,23 @@ int main()
         }
         cout<<endl;
     }
-                
+//---------------------------------------------------------------------------------------------
+  
+       
+    /* for printing       *
+                        * *
+                      * * *
+                    * * * *         */
+    int nn=4; //given
+    for(int i=1;i<=nn;i++){
+        for(int j=1;j<=nn-i;j++){        //first print spaces
+            cout<<" "<<" ";
+        }
+        for(int j=nn-i+1;j<=nn;j++){   // for remain print star
+            cout<<"*"<<" ";
+            
+        }
+        cout<<endl;
+    }            
     return 0;
 }
