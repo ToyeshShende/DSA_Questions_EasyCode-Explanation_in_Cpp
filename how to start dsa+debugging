@@ -1,0 +1,29 @@
+step 1:
+learn concept of dsa 
+most recommanded sources :  (paid) GFG self paced course(help you in learning concept and logic building)
+                            (free) love babbar dsa placement series( best practice for competitive coding)
+                            (free) code with harry dsa series
+                            
+step 2:
+
+read question clearful all given conditions and testcases ,carefully see Constraints
+
+step 3:
+
+take pen and paper try to write algo or logic on it also analyze the given test case by write on paper check
+how they are working then you will get a clear idea and logic and you will complete the code in very short amount of time.
+
+step 4:
+for Error debuging:
+if code passes all given cases but after when you submit it doesn't pass all test cases always check for corner cases like for 0 or 1 or total size
+
+if in constrains the maximum limit is give like 10^20(very big numbers) try code with long long data type initialization
+
+if code get tle error try to remove nested for loops and obtimize code avoid inizaling so many unneccesary variable ,vectors,set etc.
+
+if code get segmentation fault means you might get forgot about return vector or int (write according to function)
+
+if code get error for can't recognize vector,set,deque or any built function or stl  you might be forgot to add 
+#include <bits/stdc++.h>   as defaultly iostream lib is given.
+
+
