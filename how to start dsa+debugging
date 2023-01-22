@@ -22,7 +22,7 @@ for Error debuging:
 
 3)if code get tle error try to remove nested for loops and obtimize code avoid inizaling so many unneccesary variable ,vectors,set etc.
 
-4)if code get segmentation fault means you might get forgot about return vector or int (write according to function)
+4)if code get segmentation fault means you might get forgot about return vector or int (write according to function)  or can be code is going out of the bound.
 
 5)if code get error for can't recognize vector,set,deque or any built function or stl  you might be forgot to add 
 #include <bits/stdc++.h>   as defaultly iostream lib is given.
