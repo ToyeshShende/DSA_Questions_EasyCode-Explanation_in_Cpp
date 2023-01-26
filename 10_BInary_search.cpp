@@ -26,5 +26,5 @@ class Solution {
     }
 };
 
-// BInary seach has better time complexity than linear one as we only need to check onluy half elements
-// linear has O(n) and binary has O(n/2) time complexity.
+// BInary seach has better time complexity than linear one as we only need to check only half elements
+// linear has O(n) and binary has O(logn) time complexity.
