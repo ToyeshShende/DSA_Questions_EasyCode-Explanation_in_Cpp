@@ -30,6 +30,13 @@ int main()
     v.pop_back();  // remove element from pop_back
      v.insert(v.begin(), 5); //insert elemnent at a specific position
       v.erase(v.begin()); // remove elemnent at a specific position
+      
+      auto it=minmax_element(v.begin(),v.end());
+      cout<<endl;
+      cout<<*it.first;  //minimum elemnent
+      
+      cout<<endl;
+      cout<<*it.second; // maximum elemnent
     
     
 }
