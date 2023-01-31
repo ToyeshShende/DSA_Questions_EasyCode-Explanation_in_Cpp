@@ -34,3 +34,36 @@ public:
     }
     
 };
+
+
+
+
+
+another method   
+
+class Solution {
+public:
+    string reverseWords(string s) {
+        s.insert(s.begin(),' ');
+        string s1="";
+        int n=s.length();
+        string ans="";
+        for(int i=n-1;i>=0;i--){
+            if(s[i]==' '){
+                reverse(s1.begin(),s1.end());
+                if(s1.length()>0){
+                    ans+=s1;
+                    ans+=' ';
+                    s1="";
+                    }
+                
+            }
+            else{
+                s1+=s[i];
+            }
+        }
+        ans.pop_back();
+        return ans;
+    }
+};
+
