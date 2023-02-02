@@ -43,6 +43,14 @@ int main()
     *q=*q+1;  //addition
     cout<<*q<<endl;
     cout<<*p<<endl;
+    int arr[3]={1,2,3};
+    int i=0;
+    while(i<3){
+     
+          //as arr[i]=*(arr+i)     and  i[arr]=*(i+arr)
+     cout<<i[arr]<<endl; //it will print normal 1 2 3 arr elements according to i  
+        i++;
+    }
     
     return 0;
 }
