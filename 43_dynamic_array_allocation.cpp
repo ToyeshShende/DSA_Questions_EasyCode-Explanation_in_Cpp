@@ -17,6 +17,7 @@ int main()
     int *arr1 =new int[n]; //good practice (dynamic allocation)
     int *i= new int;
 //    8 byte   4 byte
+   // stack     heap            (location)         
      for(int i=0;i<n;i++){
         cin>>arr1[i];
     }
