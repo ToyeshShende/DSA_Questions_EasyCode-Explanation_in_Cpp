@@ -14,3 +14,26 @@ int main()
                                             //ptr2 gives us 110 which is address of ptr1 so it can also obtained by &ptr1  
     return 0;
 }
+
+
+
+//tricky questions
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int first=3;
+    int second=4;
+    int *third=&second;   //*third value become 4
+    first=*third;   //first become 4
+    *third=*third+2;   //*third is incremented by 2 so second will also incremented by 2
+    cout<<first<<endl;
+    cout<<second<<endl;
+    cout<<&second<<endl;
+    cout<<third<<endl;   //address of second
+
+    return 0;
+}
