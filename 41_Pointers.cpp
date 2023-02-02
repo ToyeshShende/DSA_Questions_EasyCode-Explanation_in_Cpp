@@ -1,13 +1,4 @@
- 
 
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -51,6 +42,28 @@ int main()
      cout<<i[arr]<<endl; //it will print normal 1 2 3 arr elements according to i  
         i++;
     }
+    /******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+
+    int arri[3]={1,2,3};
+    char arrc[6]="abcde";
+    cout<<arri<<endl;  //print address of first index of arr
+    cout<<arrc<<endl;  //print entire string
+    int *arrpi=&arri[0];
+    cout<<arrpi<<"-->"<<*arrpi<<endl;    //arrpi print first index address and *arrpi print first index of arri
+   char *arrpc=&arrc[0];
+   cout<<arrpc<<"-->"<<*arrpc<<endl;//arrpc print entire string and *arrpc print first index of arrc
+
     
     return 0;
 }
