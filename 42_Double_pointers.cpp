@@ -37,3 +37,19 @@ int main()
 
     return 0;
 }
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float f=12.5;
+    float p=21.5;
+    float *ptr=&f;
+    (*ptr)++;
+    *ptr=p;  // *ptr got 21.5 value as f's address is stored in ptr so f will also change
+    cout<<f<<" "<<p<<" "<<*ptr<<endl;   // all print 21.5 
+
+    return 0;
+}
