@@ -53,3 +53,24 @@ int main()
 
     return 0;
 }
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int val=100;
+    int *a=&val;  //*a has 100 value
+    int **b=&a;     //**b has 100 value
+    int sixth=(**b)++ + 9;  //**b is incremented by 1 so val also incremented by 1
+       // for sixth **b is post incremented so only 9 will be added;
+    int si=(**b)+9; //as **b is incremented so 101+9=110
+    cout<<si<<endl;
+    
+       
+    cout<<val<<" "<<sixth;  
+    return 0;
+}
