@@ -15,3 +15,30 @@ public:
         return final;
     }
 };
+
+
+//using recursion 
+class Solution {
+public:
+    void solve(vector<int>nums,vector<vector<int>>&final,int index){
+        if(index==nums.size()){
+            final.push_back(nums);
+            return ;
+        }
+
+        for(int i=index;i<nums.size();i++){
+            swap(nums[index],nums[i]);
+            
+            solve(nums,final,index+1);
+            swap(nums[index],nums[i]); //backtracking
+        }
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<vector<int>>final;
+        // vector<int>v;
+        int index=0;
+        solve(nums,final,index);
+        return final;
+
+    }
+};
