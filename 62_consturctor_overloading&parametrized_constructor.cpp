@@ -14,8 +14,8 @@ class Hero {
         this->level=level;
     }
     void print(){
-        cout<<health<<endl;
-        cout<<level<<endl;
+        cout<<this->health<<endl;
+        cout<<this->level<<endl;
     }
 };
 int main()
