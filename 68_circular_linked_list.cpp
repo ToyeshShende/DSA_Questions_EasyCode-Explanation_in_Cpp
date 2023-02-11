@@ -20,35 +20,18 @@ void insert_at_anyposition(int data,Node* &head,int element){
     }
     else{
         Node *curr=head; // 15 15....
-        
+                                   
         while(curr->data !=element){
             curr=curr->next;
-            
         }
+        n->next=curr->next;
+        curr->next=n;
+        
         
     
     }
 }
-void deletehead(Node* &head){
-    if(head==NULL){
-        return ;
-    }
-    Node *temp=head;
-    head=head->next;
-    delete temp;
-}
-void delete_at_tail(Node* &head){
-    if(head==NULL){
-        return ;
-    }
-    Node *temp=head;
-    while(temp->next->next!=NULL){
-     temp=temp->next;   
-    }
-    delete temp->next;
-    temp->next=NULL;
-    
-}
+
 void delete_specific(Node* &head,int val){
     if (head==NULL){
         return;
@@ -79,7 +62,7 @@ void print(Node *head){
             cout<<"->";
         }
         head=head->next;
-    }while(head->next!= temp)
+    }while(head->next!= temp);
 }
 int main()
 {
@@ -90,14 +73,7 @@ int main()
     insert_at_anyposition(30,head,15);  // 15 30 30 15....
     print(head);
     cout<<endl;
-    // //delete
-    // deletehead(head);
-    // print(head);
-    // cout<<endl;
-    // //delete at tail
-    // delete_at_tail(head);
-    // print(head);
-    // cout<<endl;
+  
     // //delete 15 
     // delete_specific(head,15);
     // print(head);
