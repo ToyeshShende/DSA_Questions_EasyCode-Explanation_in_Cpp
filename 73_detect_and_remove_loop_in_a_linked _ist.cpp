@@ -1,3 +1,6 @@
+//floyed cycle detection
+
+
 void removeLoop(ListNode* head)
     {
       ListNode* slow=head;
