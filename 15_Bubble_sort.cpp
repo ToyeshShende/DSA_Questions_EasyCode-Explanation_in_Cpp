@@ -1,3 +1,9 @@
+
+Bubble Sort is a comparison-based sorting algorithm.
+It is an in-place sorting algorithm, meaning it doesn't require additional memory to perform the sorting.
+Bubble Sort is a stable sorting algorithm, which means it maintains the relative order of equal elements.
+The number of passes required to sort the list is n-1, where n is the number of elements in the list.
+Bubble Sort performs unnecessary comparisons in each pass after the largest element has been placed in its final position, which can be optimized.
 #include <bits/stdc++.h> 
 void bubbleSort(vector<int>& arr, int n)
 {   
