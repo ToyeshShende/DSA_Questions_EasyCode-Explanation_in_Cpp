@@ -3,6 +3,7 @@ https://www.codingninjas.com/codestudio/problems/ayush-and-ninja-test_1097574?so
 
 #include <bits/stdc++.h>
 bool ispossible(int n, int m, vector<int> time ,long long mid) {
+	//check all cases 0-100->50 check for 50 if items are reaminng not completed in  given days then take l=mid+1 because 50 nahi bana parahtho phele wale kaise banayege   then  if possible hai to h=mid-1 lelo 
 	long long pagecount=0;
 	int numday=1;
 	// 10 20 30 40 50    mid first taken is 50 check adition of pagecount and array element should not exceed mid if exceed then increment the numday 
