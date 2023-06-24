@@ -135,3 +135,54 @@ int main()
     
     return 0;
 }
+
+
+//IN doubly linked list we can transverse through node from both side ie. from end and starting   
+
+// doubly linked list
+#include <iostream>
+
+using namespace std;
+struct Node{
+    int data;
+    Node *next;
+    Node *prev;
+    Node(int d){
+        data=d;
+        next=NULL;
+        prev=NULL;
+    }
+};
+struct Node* deletemiddle(Node *head){
+    Node *fast=head;
+    Node *slow=head;
+    Node *prevnode=head;
+    while(fast->next!=NULL && fast->next->next!=NULL){
+        fast=fast->next->next;
+        prevnode=slow;
+        slow=slow->next;
+    }
+    prevnode->next=slow->next;
+    slow->prev=prevnode;
+    
+    return head;
+    
+    
+}
+int main(){
+    Node *head=new Node(4);
+    Node* temp=head;
+    int n=3;
+    while(n-- &&n>0){
+        Node *curr=new Node(n);
+        temp->next=curr;
+        curr->prev=temp;
+        temp=temp->next;
+    }
+    head=deletemiddle(head);
+    while(head!=NULL){
+        cout<<head->data<<"->";
+        head=head->next;
+    }
+    
+}
