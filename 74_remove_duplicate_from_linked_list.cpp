@@ -34,6 +34,8 @@ public:
 };
 
 
+
+
 for unsorted linked list
 
 https://practice.geeksforgeeks.org/problems/remove-duplicates-from-an-unsorted-linked-list/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
@@ -63,4 +65,34 @@ Node * removeDuplicates( Node *head)
         return head;
         
      // your code goes here
+    }
+
+for sorted linked list problem 2
+
+https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/submissions/979190799/
+ ListNode* deleteDuplicates(ListNode* head) {
+        //put dummy before head move prev=dummy move dummy and head of not equal
+        // and if equal then move head only and join prev and head next
+
+        ListNode *dummy=new ListNode(0);
+        dummy->next=head;
+        ListNode *prev=dummy;
+        while(head){
+        if(head->next!=NULL && head->val==head->next->val){
+            while(head->next!=NULL && head->val==head->next->val){
+                head=head->next;
+
+            }
+            prev->next=head->next;
+
+        }
+        else{
+            prev=prev->next;
+
+        }
+        head=head->next;
+            
+        }
+        return dummy->next;
+    
     }
