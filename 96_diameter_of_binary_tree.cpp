@@ -15,7 +15,7 @@ class Solution {
       }
       int lefty=height(root->left);
       int righty=height(root->right);
-      return max(lefty,righty)+1;
+      return max(lefty,righty)+1;   // for leetcode question no need to add 1
   }
     
     int diameter(Node* root) {
