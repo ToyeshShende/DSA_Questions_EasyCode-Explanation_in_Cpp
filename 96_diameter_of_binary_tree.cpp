@@ -41,6 +41,23 @@ class Solution {
 };
 
 
+
+
+
+In the base case, when root is NULL, we return a pair of values (0, 0) because there are no nodes in the subtree, and thus the diameter and height are both 0.
+
+When root is not NULL, we recursively calculate the values for the left and right subtrees using the mp function. The height of a subtree is defined as the maximum height between its left and right subtrees, plus 1 to account for the current node. Hence, the line ans.second = max(left.second, right.second) + 1; is used to calculate the height.
+
+For calculating the diameter, we have three possibilities, similar to the previous code you shared:
+
+The diameter lies entirely in the left subtree.
+The diameter lies entirely in the right subtree.
+The diameter passes through the root node, in which case it consists of the sum of the heights of the left and right subtrees.
+To calculate the diameter, we take the maximum diameter among these three possibilities and assign it to ans.first. The line ans.first = max(opt1, max(opt2, opt3)); is used for this purpose.
+
+To summarize, when calculating the height in the mp function, you add "+1" to account for the current node. However, when calculating the diameter, the heights are already calculated with "+1" in the mp function, so you don't need to add it again when calculating opt3.
+
+In the diameterOfBinaryTree function, you simply call mp(root).first to get the diameter of the binary tree. The .first is used to extract the first value (diameter) from the pair returned by mp.
  */  /*make afucntion that return  pair 
 pair's first is diameter and second is height
 for null case return both 0
