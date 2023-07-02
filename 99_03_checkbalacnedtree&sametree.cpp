@@ -54,3 +54,23 @@ int bal(TreeNode* root){
         return true;
     }
 };
+
+
+
+
+same tree
+bool isSameTree(TreeNode* p, TreeNode* q) {
+        if(p==NULL && q==NULL){
+            return true;
+        }
+        if((p==NULL && q!=NULL )||(p!=NULL && q==NULL)){
+            return false;
+        }
+        int left=isSameTree(p->left,q->left);
+        int right=isSameTree(p->right,q->right);
+        bool ch=p->val==q->val;
+        if(ch && left && right){
+            return true;
+        }
+        return false;
+    }
