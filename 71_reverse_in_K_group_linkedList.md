@@ -52,4 +52,33 @@ public:
         }
         return prev;
     }
+
 };
+
+
+https://leetcode.com/problems/reverse-linked-list-ii/description/?envType=study-plan-v2&envId=top-interview-150
+[WhatsApp Image 2023-07-28 at 20 52 18](https://github.com/ToyeshShende/DSA_Questions_EasyCode-Explanation_in_Cpp/assets/119116915/90c0d2d5-454a-494e-bc28-aa18044b12a6)
+
+
+
+public ListNode reverseBetween(ListNode head, int left, int right) {
+    if (head == null) {
+        return null;
+    }
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+    ListNode pre = dummy;
+    for (int i = 0; i < left - 1; i++) {
+        pre = pre.next;
+    }
+    ListNode start = pre.next;
+    ListNode then = start.next;
+    for (int i = 0; i < right - left; i++) {
+        start.next = then.next;
+        then.next = pre.next;
+        pre.next = then;
+        then = start.next;
+    }
+    return dummy.next;
+}
+
