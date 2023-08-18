@@ -54,7 +54,10 @@ next permutation:https://leetcode.com/problems/next-permutation/description/
                 break;
             }
         }
-        // 1 2 3
+     //1 2 6 5 2 0 find the dip from end
+      //   idx 
+        //swap the dip greater than that element 
+        //reverse all after the dip elemnent
         for(int i=n-1 ;i>=idx && idx!=-1 ;i--){
             if(nums[i]>nums[idx]){
                 swap(nums[i],nums[idx]);
